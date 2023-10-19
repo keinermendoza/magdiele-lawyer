@@ -1,8 +1,4 @@
-
-// import CommentList from "./components/CommentList"
-// import CreateComment from "./components/CreateCommet"
-// import Image from "next/image"
-import { HiChatAlt2 } from "react-icons/hi"
+import Image from "next/image"
 import '../../styles/BlogPreview.css'
 import '../../styles/DetailPost.css'
 
@@ -13,14 +9,6 @@ async function fecthPost(slug) {
         }})
     .then(response => response.json())
 }
-
-// function fetchComments(id) {
-//     return fetch(`http://localhost:8000/api/v1/blog/${id}/comments`, {
-//         next:  {
-//             revalidate: 60
-//         }})
-//     .then(response => response.json())
-// }
 
 function formatearFecha(fechaISO) {
     const fecha = new Date(fechaISO);
@@ -35,7 +23,6 @@ export default async function PostDetailPage ({params}) {
     const post = await fecthPost(slug)
     const paragraphs = post.body.split('\n')
 
-    // const comments = await fetchComments(id)
     return (
         <main className="main section mt-3 container-lg">
             <div className="max-w-600px mx-auto mb-1">
@@ -54,13 +41,13 @@ export default async function PostDetailPage ({params}) {
                 post.image ? 
                     (
                     <figure className="col-12 col-md-9 mx-auto">
-                        <img src={post.image} width={500} className="" />
+                        <Image src={post.image} alt="foto representativa del tema del articulo" width={500} height={500} className="" />
                         <p className="mt-1 mb-0"><small>Publicado el {formatearFecha(post.created)}</small></p>
                     </figure>
                     ) : '' 
             }
             <div className="col-auto blog-post">
-                {paragraphs.map(par => <p>{par}</p>)}
+                {paragraphs.map((par, index) => <p key={index}>{par}</p>)}
             </div>
 
             {/* <CreateComment id={post.id} /> */}

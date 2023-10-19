@@ -1,11 +1,8 @@
 'use client'
 import { useState } from "react"
-import { FaCirclePlus, FaCircleXmark, FaScaleBalanced, FaPeopleGroup } from "react-icons/fa6";
-
-
+import { FaCirclePlus, FaCircleXmark } from "react-icons/fa6";
 
 export default function ServicioCard({title, icon, description, caracts}) {
-
 
     const [hover, setHover] = useState()
     const [selected, setSelected] = useState()

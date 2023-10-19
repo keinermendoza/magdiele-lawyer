@@ -2,7 +2,6 @@
 import { HiMenuAlt2, HiOutlineChevronUp } from "react-icons/hi";
 import { useState, useEffect, useContext } from "react"
 import TokenContext from "../context/TokenContext";
-import Link from "next/link"
 import NavbarItem from "./NavbarItem"
 import MobileNavbarItem from "./MobileNavbarItem"
 import '../styles/Navbar.css'
@@ -11,15 +10,6 @@ export default function Navbar({links}) {
     
     const [isOpen, setIsOpen] = useState(false)
     const {token} = useContext(TokenContext)
-
-    // const login = {
-    //     label: 'Iniciar Sesion',
-    //     url: '/login'
-    // }
-    // const logout = {
-    //     label: 'Cerrar Sesion',
-    //     url: '/logout'
-    // }
 
     function handleNavbarOpen() {
         setIsOpen(!isOpen)
@@ -51,9 +41,7 @@ export default function Navbar({links}) {
                         <NavbarItem key={link.url} link={link}/>  
                     ))
                 }
-                {/* {
-                    token ? (< NavbarItem link={logout} />) : (< NavbarItem link={login} />)
-                } */}
+
                 </nav>
                 <button className="d-block d-md-none px-2 py-1 rounded-3 up" onClick={handleNavbarOpen}>
                     {isOpen ? <HiOutlineChevronUp/> : <HiMenuAlt2/>}

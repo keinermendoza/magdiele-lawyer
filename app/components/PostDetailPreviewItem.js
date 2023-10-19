@@ -1,5 +1,3 @@
-
-
 export default function PostListPreviewItem({title, body, created}) {
     
     return (

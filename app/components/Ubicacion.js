@@ -2,12 +2,11 @@
 
 import { useState, useContext } from 'react'
 import TokenContext from '../context/TokenContext'    
-import axios from '../api/axios'
 import '../styles/Ubicacion.css'
 import ContactButton from './ContactButton'
 
 export default function Ubicacion () {
-    const endpoint = 'http://localhost:8000/api/v1/blog/realizar/consulta/'
+    const endpoint = 'https://abogadamagdiele.pythonanywhere.com/api/v1/blog/realizar/consulta/'
     const {token} = useContext(TokenContext)
     const [nombre, setNombre] = useState('')
     const [email, setEmail] = useState('')

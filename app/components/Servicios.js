@@ -4,7 +4,6 @@ import ServicioCard from "./ServicioCard"
 import Image from 'next/image';
 import ContactButton from './ContactButton';
 import {FaScaleBalanced, FaPeopleGroup } from "react-icons/fa6";
-import { useEffect, useState } from 'react';
 
 const caractCivil = [
     'Constitución de empresas.',
@@ -47,10 +46,7 @@ export default function Servicios() {
                     />
 
             </div>
-       
-
-        
-
+      
             <figure className='col-12 col-md-6 col-xxl-5'>
                 <Image 
                     src="/img_mazo.jpg"
