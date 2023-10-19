@@ -1,0 +1,14 @@
+@import '../globals.css';
+
+iframe {
+    width: 100%;
+}
+
+.ubicacion {
+    background-position: center;
+    background-image: linear-gradient(var(--background--mask),
+                                var(--background--mask)),
+                                url("/justicia.jpg");    
+
+    color: var(--font--color--formask);
+}

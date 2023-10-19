@@ -1,0 +1,15 @@
+@import '../globals.css';
+
+.blog-preview {
+    background-image: linear-gradient( var(--background--mask--pure), var(--background--mask));
+    color: var(--font--color--formask);
+    margin-block: -2px;
+}
+
+.auto-h {
+    min-height: initial;
+}
+
+.blog-post > p {
+    font-size: 1.25rem;
+}

@@ -1,0 +1,6 @@
+@import '../globals.css';
+
+body {
+        background-color: var(--background--mask--pure) !important;
+        color: white !important;
+    }

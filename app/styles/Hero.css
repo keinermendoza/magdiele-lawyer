@@ -1,0 +1,29 @@
+@import '../globals.css';
+
+.hero {
+    
+
+    background-image: linear-gradient(var(--background--mask),
+                                var(--background--mask)),
+                                url("/escritura.jpg");    
+
+    color: var(--font--color--formask);
+}
+
+.image-container {
+    /* width: clamp(300px, 50%, 500px);
+    -webkit-box-shadow: 0px -1px 94px -5px rgba(120,191,204,1);
+    -moz-box-shadow: 0px -1px 94px -5px rgba(120,191,204,1);
+    box-shadow: 0px -1px 94px -5px rgba(120,191,204,1); */
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.text-hero {
+    height: 100% !important;
+}

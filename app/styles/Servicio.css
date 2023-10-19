@@ -1,0 +1,37 @@
+@import '../globals.css';
+.servicios {
+    background-image: linear-gradient(var( --background--mask), var( --background--mask--pure));
+    color: var(--font--color--formask);
+}
+.card:hover {
+    cursor: pointer !important;
+}
+
+
+.indigo {
+    transition: color 0.2s;
+    color: var(--dark-indigo);
+}
+.pink {
+    color: var(--pink);
+}
+.card-extra {
+    max-height: 0;
+    transform-origin: top;
+    line-height: 0;
+    transition: 0.2s;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+
+}
+.card-extra.active {
+    max-height: 250px;
+    line-height: inherit;
+    margin: initial;
+    padding: initial;
+    opacity: 1;
+}
+.normal-img {
+    width: clamp(300px, 60%, 600px)
+}
