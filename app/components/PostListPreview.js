@@ -3,7 +3,7 @@ import PostListPreviewItem from "./PostDetailPreviewItem";
 import '../styles/BlogPreview.css'
 
 async function fecthPosts() {
-    return fetch('http://localhost:8000/api/v1/blog', {
+    return fetch('https://abogadamagdiele.pythonanywhere.com/api/v1/blog', {
         next: {
             revalidate: 60
         }})

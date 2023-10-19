@@ -6,8 +6,8 @@ import { HiChatAlt2 } from "react-icons/hi"
 import '../../styles/BlogPreview.css'
 import '../../styles/DetailPost.css'
 
-function fecthPost(slug) {
-    return fetch(`http://localhost:8000/api/v1/blog/${slug}`, {
+async function fecthPost(slug) {
+    return fetch(`https://abogadamagdiele.pythonanywhere.com/api/v1/blog/${slug}/`, {
         next: {
             revalidate: 60
         }})
