@@ -34,8 +34,8 @@ export default function ServicioCard({title, icon, description, caracts}) {
             </div>
 
             <div    onClick={handleSelect}
-                    className={`card bg-gray p-4 max-w-350px mx-auto card-extra  ${selected ? 'active mt-1 mb-4' : ''}`} >
-                <ul>
+                    className={`card bg-gray p-4 max-w-350px mx-auto card-extra ${selected ? 'active mt-1 mb-4' : ''}`} >
+                <ul className="d-flex flex-column justify-content-between gap-2">
                     {caracts.map((caract, index) =>
                     <li key={index}> 
                         {caract}

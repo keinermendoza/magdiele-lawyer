@@ -24,6 +24,7 @@
     opacity: 0;
     max-height: 0;
     transition: opacity 0.4s, height 0.2s;
+    overflow: hidden;
 }
 
 .mobile.active {

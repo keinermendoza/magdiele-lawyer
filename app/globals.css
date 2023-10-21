@@ -53,7 +53,18 @@ img {
 }
 .main {
     min-height: 95vh;
-    padding-top: 78px;
+    padding-top: 60px;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .main {
+        padding-top: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .main {
+        padding-top: 78px;
+    }
 }
 
 .warning-btn {

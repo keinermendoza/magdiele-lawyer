@@ -6,21 +6,21 @@ import ContactButton from './ContactButton';
 import {FaScaleBalanced, FaPeopleGroup } from "react-icons/fa6";
 
 const caractCivil = [
-    'Constitución de empresas.',
-    'Contratos comerciales.',
-    'Derecho societario.',
-    'Fusiones y adquisiciones.',
-    'Propiedad intelectual y marcas comerciales.',
-    'Derecho del consumidor.',
+    'Compraventa de Vehículos e Inmuebles',
+    'Poder General y Especial',
+    'Divorcio por Desafecto',
+    'Titulo Supletorio',
+    'Declaración de Herederos Universales',
+    'Contrato de Arrendamiento',
+    'Constitución de Asociaciones Civiles y Fundaciones',
+    'Justificativo de Testigos, entre otros…',
 ]
 
-const caractComercial = [
-    'Derecho de familia (divorcios, custodia de menores, alimentos, sucesiones).',
-    'Derecho inmobiliario.',
-    'Litigios civiles.',
-    'Responsabilidad civil.',
-    'Derecho del seguro.',
-    'Derecho de contratos.',
+const caractMercantil = [
+    'Registro de Compañía Anónima',
+    'Registro PYMES',
+    'Firma Personal',
+    'Actas de Asambleas',
 ]
 
 export default function Servicios() {
@@ -30,20 +30,21 @@ export default function Servicios() {
         <section id='servicios' className='section row servicios'>
             <div className='col-12 d-block d-md-flex d-xxl-block col-xxl-3'>
 
-
-                <ServicioCard 
-                    title='Derecho Mercantil'
-                    description='Potenciamos tu negocio con asesoramiento legal sólido y estratégico. Protegemos tus intereses para que puedas alcanzar el éxito empresarial que deseas.'
-                    icon={<FaScaleBalanced/>}
-                    caracts={caractComercial}
-                    />
-
                 <ServicioCard 
                     title='Derecho Civil'
-                    description='Tu bienestar y tus derechos son nuestra prioridad. Nuestro equipo legal está aquí para defender tus intereses y encontrar la mejor resolución para tus conflictos legales.'
+                    description='Tu bienestar es nuestra prioridad, por eso elaboramos tus documentos jurídicos y realizamos tus trámites en Tribunales Civiles, para la mejor protección de tus derechos e intereses.'
                     icon={<FaPeopleGroup/>}
                     caracts={caractCivil}
                     />
+
+                <ServicioCard 
+                    title='Derecho Mercantil'
+                    description='Brindamos el asesoramiento legal necesario para el registro de tu empresa.
+                    Protegemos tus intereses para que puedas alcanzar el éxito empresarial que deseas.'
+                    icon={<FaScaleBalanced/>}
+                    caracts={caractMercantil}
+                    />
+
 
             </div>
       
@@ -55,9 +56,7 @@ export default function Servicios() {
                     height={600}
                     alt="Foto de la Abogada Magdiele"
                     />
-            <div className="d-none d-md-flex d-lg-none">
-                <ContactButton  />
-            </div>
+          
             </figure>
 
             
@@ -66,10 +65,10 @@ export default function Servicios() {
 
                 <h3>NOS ALEGRA QUE <span className='no-wrap'>ESTES AQUI</span></h3>
                 <p className='variable-font'>
-                Te brindamos asesoramiento legal sólido y estratégico, respaldado por un equipo de abogados expertos y comprometidos en proteger tus intereses. Nuestra atención personalizada, combinada con nuestra amplia experiencia y conocimiento en el campo legal, nos permite ofrecerte soluciones efectivas y resultados positivos. Confía en nosotros para resolver tus problemas legales de manera justa, eficiente y exitosa. Tu satisfacción y tranquilidad son nuestra máxima prioridad
+                Te brindamos asesoramiento legal personalizado, con el compromiso de ofrecerte soluciones rápidas, efectivas, y con los mejores precios
                 </p>
                 
-                <div className="d-flex d-md-none d-lg-flex">
+                <div className="d-flex">
                   <ContactButton  />
                 </div>
             </article>

@@ -7,11 +7,10 @@ export default function Hero() {
             
             <div className='text-hero col-12 col-md-6 d-flex flex-column gap-1 gap-md-2 gap-lg-3 gap-xl-4 gap-xxl-5'>
                 <h1 className="name"><strong>Abogada Magdiele Mendoza</strong></h1>
-                <h2 className="title">Derecho <span className='no-wrap'>Mercantil y Civil</span></h2>
-                <h4 className="paragraph">Brindando soluciones legales efectivas para el sector Mercantil y Civil desde hace más de <span className="special-text" >15 años</span>
-                <br/><br/>
-                <span className=''>Obtenga un presupuesto sin compromisos.</span> </h4>
+                <h2 className="title">Derecho Civil y Mercantil</h2>
+                <h4 className="paragraph">Brindando soluciones legales efectivas para el sector Civil  y Mercantil,desde hace más de 15 años </h4>
                 
+                <h4 className=''>Obtenga un presupuesto sin compromisos.</h4>
                 <div className='d-flex d-md-block'>
                     <ContactButton />                
                 </div>

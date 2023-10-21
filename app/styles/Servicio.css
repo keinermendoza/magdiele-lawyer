@@ -26,7 +26,8 @@
 
 }
 .card-extra.active {
-    max-height: 250px;
+    display: gird;
+    max-height: 400px;
     line-height: inherit;
     margin: initial;
     padding: initial;
@@ -34,4 +35,8 @@
 }
 .normal-img {
     width: clamp(300px, 60%, 600px)
+}
+
+ul {
+    margin-bottom: 0 !important;
 }
