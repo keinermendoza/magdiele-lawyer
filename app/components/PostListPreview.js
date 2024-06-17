@@ -1,6 +1,5 @@
 import Link from "next/link"
 import PostListPreviewItem from "./PostDetailPreviewItem";
-import '../styles/BlogPreview.css'
 
 async function fecthPosts() {
     return fetch('https://abogadamagdiele.pythonanywhere.com/api/v1/blog', {

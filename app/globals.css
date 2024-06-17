@@ -1,4 +1,13 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+/* @import 'bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 :root {
@@ -26,6 +35,7 @@
     --navbar--height: 80px;
 
 }
+
 html {
     scroll-padding-top: 80px;
     scroll-behavior: smooth;
@@ -119,4 +129,4 @@ img {
 .bg-gray {
     background-color: var(--gray) !important;
     border: 2px solid black;
-}
+} */
