@@ -24,7 +24,10 @@ module.exports = {
           primary: '#2F2204',
           transparent: 'rgba(47,34,4,0.4)'
         },
-        "c-gray-blue": '#9696FF',
+        "c-gray-blue": {
+          primary: '#9696FF',
+          transparent: 'rgba(150,150,255,0.3)'
+        } 
         
 
       },
