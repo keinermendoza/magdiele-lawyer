@@ -64,12 +64,11 @@ export default function Hero() {
                     
                 </div>
 
-                <figure className='image-container'>
+                <figure>
                 <Image 
                     src={abogada}
-                    className='image-hero '
-                    width={450}
-                    height={450}
+                    width={400}
+                    height={400}
                     alt="Foto de la Abogada Magdiele"
                     />
                 </figure>

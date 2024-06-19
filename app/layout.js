@@ -35,7 +35,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inika.className}>
         <TokenProvider>
-          {/* <Navbar links={links} /> */}
           {children}
         </TokenProvider>
         </body>

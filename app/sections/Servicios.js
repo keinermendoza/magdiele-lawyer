@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import firma from '/public/firma-compra.png'
-import ContactButton from './ContactButton';
+import ContactButton from '../components/ContactButton';
 import {FaScaleBalanced, FaPeopleGroup } from "react-icons/fa6";
 import { frede } from '../styles/fonts';
 import { list } from 'postcss';
@@ -45,7 +45,7 @@ export async function Servicios() {
                         <span className={`${frede.className} text-8xl`}>+ 20 Años</span><br />
                         <span className='text-3xl'>De experiencia</span>    
                     </p>
-                    <p className='text-xl max-w-md mx-auto'>Descubra lo que una profesional del Derecho puede hacer por usted, su familia o su empresa</p>
+                    <p className='text-2xl max-w-lg mx-auto'>Descubra lo que una profesional del Derecho puede hacer por usted, su familia o su empresa</p>
                 </header>
 
                 <div className='flex justify-between gap-10'>

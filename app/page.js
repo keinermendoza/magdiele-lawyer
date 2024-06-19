@@ -1,6 +1,9 @@
-import Hero from './components/Hero'
-import {Servicios} from './components/Servicios'
-import Testimonials from './components/Testimonials'
+import Hero from './sections/Hero'
+import {Servicios} from './sections/Servicios'
+import Testimonials from './sections/Testimonials'
+import Contacto from './sections/Contacto'
+import LastPosts from './sections/LastPosts'
+
 import Ubicacion from './components/Ubicacion'
 import PostListPreview from './components/PostListPreview'
 import Footer from './components/Footer'
@@ -14,6 +17,8 @@ export default function Home() {
       <Hero />
       <Servicios />
       <Testimonials />
+      <Contacto />
+      <LastPosts />
       {/* <PostListPreview limit={2} />
       <Ubicacion /> */}
     </main>

@@ -3,21 +3,15 @@
 import Image from 'next/image'
 import justicia from '/public/abogada-justicia.png'
 import { frede } from '../styles/fonts'
-import { Swiper, SwiperSlide } from './Swipper'
-import { fetchTestimonialList } from '../lib/place-holder-data'
-import { useEffect, useState } from 'react'
+import { Swiper, SwiperSlide } from '../components/Swipper'
+import { testimonials } from '../lib/place-holder-data'
+import TestimonialCard from '../components/TestimonialCard'
 
 export default function  Testimonials() {
-    // const [testimonials, setTestimonials] = useState([])
-    // useEffect( async () => {
-    //     const loadedTestimonials = fetchTestimonialList()
-    //     setTestimonials(loadedTestimonials)
-    // },[])
-
     return (
         <section 
             id="testimonials"
-            className="h-screen max-h-[800px] relative bg-c-blue-65 overflow-hidden
+            className="relative bg-c-blue-65 overflow-hidden
             after:content-['']
             after:absolute after:top-0 after:left-0
             after:w-full after:h-full
@@ -46,18 +40,38 @@ export default function  Testimonials() {
                 <div>
                     <Swiper
                         loop={true}
-                        speed={1000}
-                        slidesPerView={1}
+                        speed={25000}
                         autoplay={{
-                            delay: 4000,
+                            delay: 200,
                             disableOnInteraction: false}}
-                        breakpoints={{ 768: { slidesPerView: 2 } }}
+                            
+                        breakpoints={{ 
+                            1 : {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                            },
+                            768: { 
+                                slidesPerView: 2, 
+                                spaceBetween: 10,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 10,
+                            }, 
+                        }}
                         >
-                        <SwiperSlide>Slide 1</SwiperSlide>
-                        <SwiperSlide>Slide 2</SwiperSlide>
-                        <SwiperSlide>Slide 3</SwiperSlide>
+                        {
+                            testimonials.map((t) => (
+                                <SwiperSlide className="grid place-content-center" key={t.id}>
+                                    <TestimonialCard name={t.name} text={t.text} urlImage={t.image_url} />
+                                </SwiperSlide>
+                            ))
+                        }
+                        
                     </Swiper>
+
                 </div>
+
             </div>
         </section>
     )
