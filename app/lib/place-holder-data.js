@@ -120,9 +120,57 @@ const testimonials = [
   },  
 ]
 
+
+const lastetsPosts = [
+  {
+    id: 1,
+    title: 'Lo que debes saber sobre la Firma de Poderes',
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
+    image_url: "/images/abogada-ejemplo-firma-poder.jpg",
+    date_published: "12 de Mayo 2024",
+    temas: [
+      "Poder General y Especial",
+      "Autorizaciones Personales"
+    ]
+  },
+  {
+    id: 2,
+    title: 'Lo que debes saber sobre la Firma de Poderes',
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
+    image_url: "/images/abogada-ejemplo-firma-poder.jpg",
+    date_published: "12 de Mayo 2024",
+    temas: [
+      "Poder General y Especial",
+      "Autorizaciones Personales"
+    ]
+  },
+  {
+    id: 3,
+    title: 'Lo que debes saber sobre la Firma de Poderes',
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
+    image_url: "/images/abogada-ejemplo-firma-poder.jpg",
+    date_published: "12 de Mayo 2024",
+    temas: [
+      "Poder General y Especial",
+      "Autorizaciones Personales"
+    ]
+  },
+  {
+    id: 4,
+    title: 'Lo que debes saber sobre la Firma de Poderes',
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
+    image_url: "/images/abogada-ejemplo-firma-poder.jpg",
+    date_published: "12 de Mayo 2024",
+    temas: [
+      "Poder General y Especial",
+      "Autorizaciones Personales"
+    ]
+  }
+]
 module.exports = {
     services,
     testimonials,
+    lastetsPosts
     // customers,
     // invoices,
     // revenue,

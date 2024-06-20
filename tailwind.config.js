@@ -15,7 +15,7 @@ module.exports = {
           
         },
         "c-gold": {
-          primary: '#FFF996',
+          primary: '#E8E27D',
           shine: '#FFF996',
           soft: '#ECEAC6',
           transparent: 'rgba(236,234,198,0.8)'

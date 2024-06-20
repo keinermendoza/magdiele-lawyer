@@ -1,0 +1,10 @@
+.transition-acordion {
+    padding: 0;
+    transition: max-height ease 300ms, padding 300ms;
+    max-height: 0;
+}
+
+.transition-acordion.open {
+    padding: 0.5rem 0.75rem;
+    max-height: 400px;
+}
