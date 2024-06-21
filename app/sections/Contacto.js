@@ -37,7 +37,7 @@ export default function Contacto() {
           <div className="flex flex-col gap-5 items-center ">
               <p>Recibe una respuesta rapida y familiar escribiendo por Whatsapp</p>
               <p>Te recomendamos este metodo, es la forma mas practica. La mayoria de nuestros clientes lo usan.</p>
-              <WhatsappBtn />
+              <WhatsappBtn isBlue size='big' />
           </div>
 
           <div className="max-w-sm ">

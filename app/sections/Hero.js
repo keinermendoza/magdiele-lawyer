@@ -1,10 +1,9 @@
 
 import Image from 'next/image'
 
-import saludo from '/public/saludo-negocios.jpg'
+import saludo from '/public/images/saludo.png'
 import abogada from '/public/abogada-blob-transition-ready.svg'
-import { FaWhatsapp } from 'react-icons/fa6'
- 
+import WhatsappBtn from '../components/WhatsappBtn' 
 function Background() {
   return (
     <Image
@@ -12,7 +11,7 @@ function Background() {
       src={saludo}
       quality={100}
       fill
-      sizes="100vw"
+      sizes="128vw"
       style={{
         objectFit: 'cover',
         objectPosition: 'bottom right'
@@ -54,12 +53,7 @@ export default function Hero() {
                     </div>
 
                     <div className='mt-10'>
-                        <a href="#whatsapp-link"
-                        className='w-fit text-3xl flex items-center gap-5 py-3 px-6 rounded-md bg-c-gold-primary text-c-brown-primary'
-                        >   
-                            <FaWhatsapp></FaWhatsapp>
-                            <span>Contactame</span>
-                        </a>
+                      <WhatsappBtn />
                     </div>
                     
                 </div>

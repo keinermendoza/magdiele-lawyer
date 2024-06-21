@@ -5,16 +5,17 @@ import Contacto from './sections/Contacto'
 import LastPosts from './sections/LastPosts'
 import Ubicacion from './sections/Ubicacion'
 import FAQ from './sections/FAQ'
-
+import Navbar from './sections/Navbar'
 // import Ubicacion from './components/Ubicacion'
 import PostListPreview from './components/PostListPreview'
-import Footer from './components/Footer'
+import Footer from './sections/Footer'
 
 export default function Home() {
   
   
   return (
 <>
+    <Navbar />
     <main className='main'>
       <Hero />
       <Servicios />
@@ -26,7 +27,7 @@ export default function Home() {
       {/* <PostListPreview limit={2} />
       <Ubicacion /> */}
     </main>
-          {/* <Footer /> */}
+    <Footer />
 
 </>
     )

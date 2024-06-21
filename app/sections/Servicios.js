@@ -1,11 +1,8 @@
 import Image from 'next/image';
 import firma from '/public/firma-compra.png'
-import ContactButton from '../components/ContactButton';
-import {FaScaleBalanced, FaPeopleGroup } from "react-icons/fa6";
 import { frede } from '../styles/fonts';
-import { list } from 'postcss';
 import { fetchServicesList } from '../lib/services';
-import { FaWhatsapp } from 'react-icons/fa6';
+import WhatsappBtn from '../components/WhatsappBtn';
 
 const caractCivil = [
     'Compraventa de Vehículos e Inmuebles',
@@ -86,14 +83,15 @@ export async function Servicios() {
                         Hay muchos otros servicios disponibles. <br />
                         Haga una cosulta 100% Gratis.
                     </p>
-                    
+{/*                     
                     <a href="#whatsapp-link"
                     className='w-fit text-3xl flex items-center gap-5 py-4 px-6 rounded-md text-white bg-c-blue-primary'
                     >   
                         <FaWhatsapp></FaWhatsapp>
                         <span>Consulta 100% Gratis</span>
                     </a>
-
+ */}
+                <WhatsappBtn isBlue text='Consulta 100% Gratis' />
 
                 </footer>
 

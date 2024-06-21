@@ -2,9 +2,10 @@
 import { HiMenuAlt2, HiOutlineChevronUp } from "react-icons/hi";
 import { useState, useEffect, useContext } from "react"
 import TokenContext from "../context/TokenContext";
-import NavbarItem from "./NavbarItem"
-import MobileNavbarItem from "./MobileNavbarItem"
+// import NavbarItem from "./NavbarItem"
+// import MobileNavbarItem from "./MobileNavbarItem"
 import '../styles/Navbar.css'
+import Link from "next/link";
 
 export default function Navbar({links}) {
     
@@ -38,7 +39,9 @@ export default function Navbar({links}) {
                 <nav className="col-7 d-none d-md-flex align-items-center justify-content-evenly ">
                 {
                     links.map(link => (
-                        <NavbarItem key={link.url} link={link}/>  
+                        <li  className="nav-item rounded-pill px-3 py-1">
+                            <Link className="nav-link" href={link.url}>{link.label}</Link>
+                        </li>  
                     ))
                 }
 
@@ -55,7 +58,9 @@ export default function Navbar({links}) {
                 <div className="d-flex flex-column text-center row-gap-1 mt-2 ">
                     {
                         links.map(link => (
-                            <MobileNavbarItem key={link.url} link={link} handleNavbarOpen={handleNavbarOpen}/>    
+                            <li  className="nav-item p-2">
+                                <Link onClick={handleNavbarOpen} className="nav-link" href={link.url}>{link.label}</ Link>
+                            </li>   
                         ))
                     }
                 </div>
