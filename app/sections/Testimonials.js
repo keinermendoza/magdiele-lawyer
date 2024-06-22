@@ -25,14 +25,14 @@ export default function  Testimonials() {
                 height={400}
                 alt="Foto de la Abogada Magdiele"
             />
-            <div className='relative z-10 max-w-[85rem] w-full mx-auto p-4 md:p-6 lg:p-8'>
+            <div className='relative z-10 max-w-[85rem] w-full mx-auto  px-4 md:px-6 lg:px-8 py-16 lg:py-24'>
 
                 <div className='text-c-gold-shine text-center mb-10 w-full'>
-                    <h2 className={`${frede.className} text-7xl mb-5`}>
+                    <h2 className={`${frede.className}  text-5xl lg:text-7xl mb-5`}>
                         Nuestros Clientes
                     </h2>
-                    <p className='text-3xl flex flex-col gap-3'>
-                        <span>Conoce las historias de quienes han experimentado </span>
+                    <p className='text-2xl lg:text-3xl flex flex-col lg:gap-3'>
+                        <span>Conoce las historias de quienes han experimentado</span>
                         <span>nuestros servicios</span>
                     </p>
                 </div>

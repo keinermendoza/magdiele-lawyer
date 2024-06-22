@@ -2,9 +2,13 @@ import Image from "next/image"
 import abogada from '/public/abogada-blob-transition-ready.svg'
 import { frede } from "../styles/fonts"
 import WhatsappBtn from "../components/WhatsappBtn"
+import Decoration from "../components/Decoration"
 export default function Footer() {
   return (
-    <footer className="p-4 md:p-6 lg:p-8 xl:p-10  bg-c-blue-primary text-c-gray-blue-primary ">
+    <footer className="relative p-4 md:p-6 lg:p-8 xl:p-10 py-16  bg-c-blue-primary text-c-gray-blue-primary ">
+        <Decoration isGold position="bl" />
+        <Decoration isGold position="br" />
+
         <div id="footer-nav-container transition-color" className="max-w-7xl mx-auto xl:text-lg flex gap-8 flex-wrap justify-between w-full">
             <div id="footer-developer-info" className=" flex flex-col gap-5 xl:gap-6">
                 <h3 className={`${frede.className} text-xl xl:text-3xl font-semibold`}>MAGDIELE MENDOZA</h3>
@@ -25,12 +29,13 @@ export default function Footer() {
                 </figure>
             </div>
 
-            <nav className="" id="footer-current-page-sections-nav">
+            {/* <nav className="" id="footer-current-page-sections-nav">
                 <h4 className="mb-3 xl:mb-5 text-lg xl:text-xl">EN ESTA PAGINA</h4>
                 <ul className="text-secundary flex flex-col gap-1 relative left-1">
                     
                 </ul>
             </nav>
+             */}
             <nav className="d-none lg:block" id="footer-other-pages-nav">
                 <h4 className="mb-3 xl:mb-5 text-lg xl:text-xl">TODAS LAS PAGINAS</h4>
                 <ul className="text-secundary flex flex-col gap-1 relative left-1">

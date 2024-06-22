@@ -68,18 +68,18 @@ const services = [
 ]
 
 const testimonials = [
-  {
-    id: '1',
-    name: 'Justificativo de Testigos',
-    text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele Mendoza. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
-    image_url: '/images/abogada-testimonio-1-ready.png',
-  },
-  {
-    id: '2',
-    name: 'Jeison Ramirez',
-    text:'Buenas noches Este Bueno yo me siento satisfecho por los trabajos realizados que me ha hecho la la doctora Marlene porque es una persona muy honesta sincera y amable y no es un solo trabajo que me ha hecho ya me ha hecho varios trabajos y y bueno yo Considero que es una persona adecuada para hacer la lo que es la parte de documentación y todo lo que ella en que ella se especializa sin seriamente y bueno yo la recomiendo y la he recomendado por cierto a a familiares amigos gente cercana y han quedado contentos con con su labor pues Y eso para mí bueno ese gran de Gran agrado y me imagino que para ella sentirse cómoda y y placentera en su en su ámbito de trabajo pues',
-    image_url: '/images/abogada-testimonio-2-ready.png',
-  },
+  // {
+  //   id: '1',
+  //   name: 'Justificativo de Testigos',
+  //   text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele Mendoza. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
+  //   image_url: '/images/abogada-testimonio-1-ready.png',
+  // },
+  // {
+  //   id: '2',
+  //   name: 'Jeison Ramirez',
+  //   text:'Buenas noches Este Bueno yo me siento satisfecho por los trabajos realizados que me ha hecho la la doctora Marlene porque es una persona muy honesta sincera y amable y no es un solo trabajo que me ha hecho ya me ha hecho varios trabajos y y bueno yo Considero que es una persona adecuada para hacer la lo que es la parte de documentación y todo lo que ella en que ella se especializa sin seriamente y bueno yo la recomiendo y la he recomendado por cierto a a familiares amigos gente cercana y han quedado contentos con con su labor pues Y eso para mí bueno ese gran de Gran agrado y me imagino que para ella sentirse cómoda y y placentera en su en su ámbito de trabajo pues',
+  //   image_url: '/images/abogada-testimonio-2-ready.png',
+  // },
   {
     id: '3',
     name: 'Libia Alemán',
@@ -93,18 +93,18 @@ const testimonials = [
     text:'Hola qué tal, les quería compartir mi experiencia con mi amiga y abogada Magdiele de Machado, les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación, compromiso y esmero y sobre todo es muy responsable y detallista. Por ende,  no nudo en recomendarla.  Bendiciones',
     image_url: '/images/abogada-testimonio-4-ready.png',
   },  
-  {
-    id: '5',
-    name: 'Justificativo de Testigos',
-    text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele Mendoza. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
-    image_url: '/images/abogada-testimonio-1-ready.png',
-  },
-  {
-    id: '6',
-    name: 'Jeison Ramirez',
-    text:'Buenas noches Este Bueno yo me siento satisfecho por los trabajos realizados que me ha hecho la la doctora Marlene porque es una persona muy honesta sincera y amable y no es un solo trabajo que me ha hecho ya me ha hecho varios trabajos y y bueno yo Considero que es una persona adecuada para hacer la lo que es la parte de documentación y todo lo que ella en que ella se especializa sin seriamente y bueno yo la recomiendo y la he recomendado por cierto a a familiares amigos gente cercana y han quedado contentos con con su labor pues Y eso para mí bueno ese gran de Gran agrado y me imagino que para ella sentirse cómoda y y placentera en su en su ámbito de trabajo pues',
-    image_url: '/images/abogada-testimonio-2-ready.png',
-  },
+  // {
+  //   id: '5',
+  //   name: 'Justificativo de Testigos',
+  //   text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele Mendoza. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
+  //   image_url: '/images/abogada-testimonio-1-ready.png',
+  // },
+  // {
+  //   id: '6',
+  //   name: 'Jeison Ramirez',
+  //   text:'Buenas noches Este Bueno yo me siento satisfecho por los trabajos realizados que me ha hecho la la doctora Marlene porque es una persona muy honesta sincera y amable y no es un solo trabajo que me ha hecho ya me ha hecho varios trabajos y y bueno yo Considero que es una persona adecuada para hacer la lo que es la parte de documentación y todo lo que ella en que ella se especializa sin seriamente y bueno yo la recomiendo y la he recomendado por cierto a a familiares amigos gente cercana y han quedado contentos con con su labor pues Y eso para mí bueno ese gran de Gran agrado y me imagino que para ella sentirse cómoda y y placentera en su en su ámbito de trabajo pues',
+  //   image_url: '/images/abogada-testimonio-2-ready.png',
+  // },
   {
     id: '7',
     name: 'Libia Alemán',
@@ -155,17 +155,17 @@ const lastetsPosts = [
       "Autorizaciones Personales"
     ]
   },
-  {
-    id: 4,
-    title: 'Lo que debes saber sobre la Firma de Poderes',
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
-    image_url: "/images/abogada-ejemplo-firma-poder.jpg",
-    date_published: "12 de Mayo 2024",
-    temas: [
-      "Poder General y Especial",
-      "Autorizaciones Personales"
-    ]
-  }
+  // {
+  //   id: 4,
+  //   title: 'Lo que debes saber sobre la Firma de Poderes',
+  //   text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
+  //   image_url: "/images/abogada-ejemplo-firma-poder.jpg",
+  //   date_published: "12 de Mayo 2024",
+  //   temas: [
+  //     "Poder General y Especial",
+  //     "Autorizaciones Personales"
+  //   ]
+  // }
 ]
 module.exports = {
     services,

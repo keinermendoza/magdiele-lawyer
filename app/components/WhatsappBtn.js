@@ -4,13 +4,13 @@ export default function WhatsappBtn({isBlue=false, text='Contactame', size='medi
   let sizeClass = null
   switch (size) {
     case 'medium':
-      sizeClass = 'text-3xl py-3 px-6'
+      sizeClass = 'text-2xl lg:text-3xl py-2 px-4 lg:py-3 lg:px-6'
       break;
     case 'big':
-      sizeClass = 'text-4xl py-4 px-8'
+      sizeClass = 'text-3xl lg:text-4xl py-2 px-4 lg:py-4 lg:px-8'
       break;
     case 'small':
-      sizeClass = 'py-1 px-2'
+      sizeClass = 'py-1 px-3'
       break;
     default:
       throw new Error('You must to provide a valid size: default:"medium", options: ["big", "small"]')
@@ -18,13 +18,13 @@ export default function WhatsappBtn({isBlue=false, text='Contactame', size='medi
 
   return (
     <a href="#whatsapp-link"
-    className={`w-fit flex items-center gap-5 rounded-md 
+    className={`w-fit flex items-center gap-3 lg:gap-5 rounded-md 
     transition-all outline-offset-4 outline-transparent hover:outline hover:outline-2 hover:scale-105
     ${isBlue ? 'bg-c-blue-primary text-white hover:outline-c-blue-primary' : 'bg-c-gold-primary text-c-brown-primary  hover:outline-c-gold-primary'}
     ${sizeClass}
     `}
     >   
-        <FaWhatsapp></FaWhatsapp>
+        <FaWhatsapp className='shrink-0' />
         <span>{text}</span>
     </a>
   )

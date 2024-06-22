@@ -1,5 +1,6 @@
 "use client"
 import AcordionQuestion from '../components/AcordionQuestion'
+import Decoration from '../components/Decoration'
 
 export default function FAQ() {
   return (
@@ -7,9 +8,20 @@ export default function FAQ() {
         id="preguntas-frecuentes"
         className="relative
         bg-c-brown-primary text-c-gold-primary">
+          <svg
+            className='absolute bottom-0 left-0 w-full h-auto' 
+            width="1800" height="238" viewBox="0 0 1800 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 99.6L300 52.8L600 146.4L900 216.6L1200 99.6L1500 6L1800 123V240H1500H1200H900H600H300H0V99.6Z" fill="#5C5CFF"/>
+            <path d="M1 238L300.833 0H600.667L900.5 119L1200.33 39.6667L1500.17 158.667L1800 119V238H1500.17H1200.33H900.5H600.667H300.833H1Z" fill="#7A7AFF"/>
+            <path d="M0 228.14L248.5 143.838L445 228.14L727 101.255L1042 200.688L1200 143.838L1324 184.116L1445 143.838L1573 80L1800 228.14V245H1500H1200H900H600H300H0V228.14Z" fill="#A3A3FF"/>
+          </svg>
 
-        <div className='relative z-10 max-w-[85rem] w-full mx-auto p-4 md:p-6 lg:p-8'>
-          <h2 className="text-center text-4xl">Respuestas a Preguntas Frecuentes</h2>
+
+          <Decoration isGold />
+          <Decoration position='tr' isGold />
+
+        <div className='relative z-10 max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 py-16 lg:py-24'>
+          <h2 className="text-center text-3xl lg:text-4xl">Respuestas a Preguntas Frecuentes</h2>
 
           <div className='my-10 flex flex-col gap-5'>
               <AcordionQuestion question="¿Hacer una consulta es Gratis?">
