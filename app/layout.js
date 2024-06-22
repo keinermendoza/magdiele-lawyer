@@ -1,7 +1,6 @@
 import { Nunito } from 'next/font/google'
 import Navbar from './components/Navbar'
 import { TokenProvider } from './context/TokenContext'
-// const nunito = Nunito({ subsets: ['latin'] })
 import { inika } from './styles/fonts'
 export const metadata = {
   title: 'Abogada Magdiele',

@@ -3,6 +3,24 @@ import { HiMenuAlt2, HiOutlineChevronUp } from "react-icons/hi";
 import { useState, useEffect, useRef } from "react"
 import WhatsappBtn from "../components/WhatsappBtn";
 
+const MobileLink = ({children, link}) => {
+    return (
+        <li>
+            <a className="transition duration-200 block py-3 w-full hover:bg-c-gray-blue-transparent" 
+            href={link}>{children}</a>
+        </li>
+    )
+}
+
+const DesktopLink = ({children, link}) => {
+    return (
+        <li>
+            <a className="underline-offset-4 hover:underline hover:decoration-2 hover:decoration-slate-200" 
+            href={link}>{children}</a>
+        </li>
+    )
+}
+
 export default function Navbar() {
     const [isSolidBackground, setIsSolidBackground] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
@@ -73,34 +91,13 @@ export default function Navbar() {
 
             <nav className="hidden lg:flex justify-between text-white bg-white bg-opacity-10 py-2 px-4  rounded-md">
                 <ul className="flex gap-4 xl:gap-8 ">        
-                    <li>
-                        <a className="transition-all underline-offset-4 hover:underline hover:decoration-2 hover:decoration-slate-200" 
-                        href="#servicios">Servicios</a>
-                    </li>
-
-                    <li>
-                        <a className="underline-offset-4 hover:underline hover:decoration-2 hover:decoration-slate-200" 
-                        href="#clientes">Clientes</a>
-                    </li>
-                    <li>
-                        <a className="underline-offset-4 hover:underline hover:decoration-2 hover:decoration-slate-200" 
-                        href="#contacto">Contacto</a>
-                    </li>
-                    <li>
-                        <a className="underline-offset-4 hover:underline hover:decoration-2 hover:decoration-slate-200" 
-                        href="#ultimas-publicaicones">Ultimas Publicaciones</a>
-                    </li>
-                    <li>
-                        <a className="underline-offset-4 hover:underline hover:decoration-2 hover:decoration-slate-200" 
-                        href="#ubicacion">Ubicacion</a>
-                    </li>
-                    <li>
-                        <a className="underline-offset-4 hover:underline hover:decoration-2 hover:decoration-slate-200" 
-                        href="#faq">FAQ</a>
-                    </li>
+                    <DesktopLink link="#servicios">Servicios</DesktopLink>
+                    <DesktopLink link="#clientes">Clientes</DesktopLink>
+                    <DesktopLink link="#contacto">Contacto</DesktopLink>
+                    <DesktopLink link="#ultimas-publicaciones">Ultimas Publicaciones</DesktopLink>
+                    <DesktopLink link="#ubicacion">Ubicacion</DesktopLink>
+                    <DesktopLink link="#faq">Respuestas</DesktopLink>
                 </ul>
-
-                
             </nav>
 
             <div className="hidden sm:block">
@@ -109,54 +106,23 @@ export default function Navbar() {
 
             <button 
                 onClick={handleNavbarOpen}
-                className="rounded grid place-content-center w-7 h-7 bg-teal-400 lg:hidden">
+                className="rounded grid place-content-center w-7 h-7 bg-c-gold-primary lg:hidden">
                  {isOpen ? <HiOutlineChevronUp/> : <HiMenuAlt2/>}
             </button>
                     
         
         {/* MENU MOBILE */}
         <nav 
-            className={`transition-all duration-300 bg-darkheade fixed w-full overflow-hidden
+            className={`transition-all left-0 duration-300 bg-c-blue-95 text-c-gold-shine fixed w-screen h-screen overflow-hidden
                 ${isOpen ? 'block opacity-100 top-12' : 'hidden opacity-0 top-10'}
             `}>
             <ul className="min-h-screen flex flex-col text-center">
-                <li>
-                    <a className="transition duration-200 block py-3 w-full hover:bg-violet-900" 
-                    href="#servicios">Servicios</a>
-                </li>
-
-                <li>
-                    <a className="transition duration-200 block py-3 w-full hover:bg-violet-900" 
-                    href="#clientes">Clientes</a>
-                </li>
-                <li>
-                    <a className="transition duration-200 block py-3 w-full hover:bg-violet-900" 
-                    href="#contacto">Contacto</a>
-                </li>
-                <li>
-                    <a className="transition duration-200 block py-3 w-full hover:bg-violet-900" 
-                    href="#ultimas-publicaicones">Ultimas Publicaciones</a>
-                </li>
-                <li>
-                    <a className="transition duration-200 block py-3 w-full hover:bg-violet-900" 
-                    href="#ubicacion">Ubicacion</a>
-                </li>
-                <li>
-                    <a className="transition duration-200 block py-3 w-full hover:bg-violet-900" 
-                    href="#faq">FAQ</a>
-                </li>
-               
-
-                <li className="flex py-3 justify-center items-center transition duration-200 w-full hover:bg-violet-800">
-                    {/* <!-- FACEBOOK SHARE --> */}
-                    <div id="facebook-share-button" 
-                        className="fb-share-button grayscale" 
-                        data-href="https://keinermendoza.com"
-                        data-size="large"
-                        data-lazy="true" 
-                        data-layout="button">
-                    </div>
-                </li>
+                <MobileLink link="#servicios">Servicios</MobileLink>
+                <MobileLink link="#clientes">Clientes</MobileLink>
+                <MobileLink link="#contacto">Contacto</MobileLink>
+                <MobileLink link="#ultimas-publicaciones">Ultimas Publicaciones</MobileLink>
+                <MobileLink link="#ubicacion">Ubicacion</MobileLink>
+                <MobileLink link="#faq">Respuestas</MobileLink>
             </ul>
         </nav>
 

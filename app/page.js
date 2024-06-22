@@ -6,8 +6,6 @@ import LastPosts from './sections/LastPosts'
 import Ubicacion from './sections/Ubicacion'
 import FAQ from './sections/FAQ'
 import Navbar from './sections/Navbar'
-// import Ubicacion from './components/Ubicacion'
-import PostListPreview from './components/PostListPreview'
 import Footer from './sections/Footer'
 
 export default function Home() {
@@ -24,8 +22,6 @@ export default function Home() {
       <LastPosts />
       <Ubicacion />
       <FAQ />
-      {/* <PostListPreview limit={2} />
-      <Ubicacion /> */}
     </main>
     <Footer />
 

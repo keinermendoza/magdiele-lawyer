@@ -97,13 +97,13 @@ export default function Contacto() {
                 <div className='relative flex justify-end'>
                   <button
                     type='submit'
-                    className='w-fit text-3xl flex items-center gap-5 py-3 px-6 rounded-md text-c-gold-soft border-solid border-2 border-c-gold-soft bg-c-brown-primary
+                    className='w-fit flex items-center lg:gap-5 gap-3 text-2xl lg:text-3xl py-2 px-4 lg:py-3 lg:px-6 rounded-md text-c-gold-soft border-solid border-2 border-c-gold-soft bg-c-brown-primary
                     transition-all outline-offset-4 outline-transparent hover:outline hover:outline-3 hover:scale-105
                     hover:outline-c-brown-primary
                     '
 
                     >   
-                      <svg width="36" height="36" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg className='h-6 w-6 lg:h-8 lg:w-8' width="36" height="36" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M30.625 4.125V19.875C30.625 20.7701 30.2694 21.6285 29.6365 22.2615C29.0035 22.8944 28.1451 23.25 27.25 23.25H4.75C3.85489 23.25 2.99645 22.8944 2.36351 22.2615C1.73058 21.6285 1.375 20.7701 1.375 19.875V4.125M30.625 4.125C30.625 3.22989 30.2694 2.37145 29.6365 1.73851C29.0035 1.10558 28.1451 0.75 27.25 0.75H4.75C3.85489 0.75 2.99645 1.10558 2.36351 1.73851C1.73058 2.37145 1.375 3.22989 1.375 4.125M30.625 4.125V4.4895C30.6251 5.06572 30.4776 5.63236 30.1966 6.13544C29.9157 6.63853 29.5106 7.06131 29.02 7.3635L17.77 14.286C17.2378 14.6138 16.625 14.7874 16 14.7874C15.375 14.7874 14.7622 14.6138 14.23 14.286L2.98 7.365C2.48938 7.06281 2.0843 6.64003 1.80335 6.13694C1.5224 5.63386 1.37494 5.06722 1.375 4.491V4.125" stroke="#ECEAC6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
 
