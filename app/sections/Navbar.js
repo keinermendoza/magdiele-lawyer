@@ -7,7 +7,7 @@ import Link from "next/link";
 const MobileLink = ({children, link}) => {
     return (
         <li>
-            <Link className="transition duration-200 block py-3 w-full hover:bg-c-gray-blue-transparent" 
+            <Link className="transition duration-200 block text-xl py-5 w-full hover:bg-c-gray-blue-transparent" 
             href={link}>{children}</Link>
         </li>
     )

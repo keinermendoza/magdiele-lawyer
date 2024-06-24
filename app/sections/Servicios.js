@@ -43,7 +43,7 @@ export async function Servicios() {
                 flex flex-col gap-12 lg:gap-20
             '>
                 <header className='flex flex-col gap-6 lg:gap-10 text-center'>
-                    <h2 className='text-2xl lg:text-4xl '>Solucion Legales sin Complicaciones ni Burocracia </h2>
+                    <h2 className='text-2xl lg:text-4xl '>Soluciones Legales sin Complicaciones ni Burocracia </h2>
                     <p>
                         <span className={`${frede.className} text-7xl lg:text-8xl`}>+ 20 Años</span><br />
                         <span className='text-xl lg:text-3xl'>De experiencia</span>    

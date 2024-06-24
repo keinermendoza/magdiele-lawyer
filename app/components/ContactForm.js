@@ -137,7 +137,7 @@ export default function ContactForm() {
                     id="nombre"
                     name='nombre'
                     type="text"
-                    className='w-full text-base px-2 py-1'
+                    className='w-full text-base px-2 py-1 rounded-md'
                 />
             </div>
 
@@ -162,7 +162,7 @@ export default function ContactForm() {
                     name='email'
                     id="email"
                     type="text" 
-                    className='w-full text-base px-2 py-1'
+                    className='w-full text-base px-2 py-1 rounded-md'
                 />
                 </div>
 
@@ -180,7 +180,7 @@ export default function ContactForm() {
                     onInput={(e) => setMensaje(e.target.value)}
                     value={mensaje}
 
-                    className='w-full text-base px-2 py-1'
+                    className='w-full text-base px-2 py-1 rounded-md'
                     name="pregunta"
                     id="pregunta"
                     cols="30"
