@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        // sans: ['var(--font-inika)'],
+      },
       colors: {
         "c-blue": {
           primary: '#0C0C81',
