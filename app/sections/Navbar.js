@@ -2,12 +2,13 @@
 import { HiMenuAlt2, HiOutlineChevronUp } from "react-icons/hi";
 import { useState, useEffect, useRef } from "react"
 import WhatsappBtn from "../components/WhatsappBtn";
+import Link from "next/link";
 
 const MobileLink = ({children, link}) => {
     return (
         <li>
-            <a className="transition duration-200 block py-3 w-full hover:bg-c-gray-blue-transparent" 
-            href={link}>{children}</a>
+            <Link className="transition duration-200 block py-3 w-full hover:bg-c-gray-blue-transparent" 
+            href={link}>{children}</Link>
         </li>
     )
 }
@@ -15,13 +16,40 @@ const MobileLink = ({children, link}) => {
 const DesktopLink = ({children, link}) => {
     return (
         <li>
-            <a className="underline-offset-4 hover:underline hover:decoration-2 hover:decoration-slate-200" 
-            href={link}>{children}</a>
+            <Link className="underline-offset-4 hover:underline hover:decoration-2 hover:decoration-slate-200" 
+            href={link}>{children}</Link>
         </li>
     )
 }
 
+
+
+
 export default function Navbar() {
+    const LINKS = [
+        {
+          label: 'Servicios',
+          link : '/#servicios'
+        }, {
+          label: 'Clientes',
+          link: '/#clientes'
+        }, {
+          label:'Contacto',
+          link: '/#contacto'
+        }, {
+          label: 'Publicaciones',
+          link: '/#ultimas-publicaciones'
+        }, {
+            label: 'Ubicacion',
+            link: '/#ubicacion'
+          }, {
+            label: 'Respuestas',
+            link: '/#respuestas'
+          }, {
+            label: 'Blog',
+            link: '/blog'
+          },
+      ]
     const [isSolidBackground, setIsSolidBackground] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
     function handleNavbarOpen() {
@@ -59,10 +87,10 @@ export default function Navbar() {
 
             
 
-            <a className="flex items-center gap-2 text-xl text-c-gold-shine underline-offset-4 hover:underline hover:decoration-2 hover:decoration-slate-200" 
-                href="#Brand">
+            <Link className="flex items-center gap-2 text-xl text-c-gold-shine underline-offset-4 hover:underline hover:decoration-2 hover:decoration-slate-200" 
+                href="/#home">
                 <svg width="22" height="22" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_250_1156)">
+                    <g clipPath="url(#clip0_250_1156)">
                         <path d="M16.0348 6.70703H13.9658V19.638H16.0348V6.70703Z" fill="#FFD782"/>
                         <path d="M16.0345 19.1211H13.9655C13.6799 19.1211 13.4482 19.3527 13.4482 19.6384V26.8797H16.5517V19.6384C16.5517 19.3527 16.3202 19.1211 16.0345 19.1211Z" fill="#FFC36E"/>
                         <path d="M19.9639 27.4286L16.5519 26.3623H13.4484L10.0365 27.4285C9.60457 27.5635 9.31055 27.9634 9.31055 28.416H20.6898C20.6898 27.9635 20.3957 27.5635 19.9639 27.4286Z" fill="#FFD782"/>
@@ -87,16 +115,16 @@ export default function Navbar() {
                 <span>
                     Abogada Magdile
                 </span>
-            </a>
+            </Link>
 
             <nav className="hidden lg:flex justify-between text-white bg-white bg-opacity-10 py-2 px-4  rounded-md">
-                <ul className="flex gap-4 xl:gap-8 ">        
-                    <DesktopLink link="#servicios">Servicios</DesktopLink>
-                    <DesktopLink link="#clientes">Clientes</DesktopLink>
-                    <DesktopLink link="#contacto">Contacto</DesktopLink>
-                    <DesktopLink link="#ultimas-publicaciones">Ultimas Publicaciones</DesktopLink>
-                    <DesktopLink link="#ubicacion">Ubicacion</DesktopLink>
-                    <DesktopLink link="#faq">Respuestas</DesktopLink>
+                <ul className="flex gap-4 xl:gap-8 ">     
+                    {
+                        LINKS.map((l, index) => (
+                            <DesktopLink key={index} link={l.link}>{l.label}</DesktopLink>
+                        ))
+                    }   
+
                 </ul>
             </nav>
 
@@ -117,12 +145,13 @@ export default function Navbar() {
                 ${isOpen ? 'block opacity-100 top-12' : 'hidden opacity-0 top-10'}
             `}>
             <ul className="min-h-screen flex flex-col text-center">
-                <MobileLink link="#servicios">Servicios</MobileLink>
-                <MobileLink link="#clientes">Clientes</MobileLink>
-                <MobileLink link="#contacto">Contacto</MobileLink>
-                <MobileLink link="#ultimas-publicaciones">Ultimas Publicaciones</MobileLink>
-                <MobileLink link="#ubicacion">Ubicacion</MobileLink>
-                <MobileLink link="#faq">Respuestas</MobileLink>
+
+                {
+                    LINKS.map((l, index) => (
+                        <MobileLink key={index} link={l.link}>{l.label}</MobileLink>
+                    ))
+                }  
+
             </ul>
         </nav>
 

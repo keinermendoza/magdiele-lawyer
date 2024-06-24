@@ -68,12 +68,12 @@ const services = [
 ]
 
 const testimonials = [
-  // {
-  //   id: '1',
-  //   name: 'Justificativo de Testigos',
-  //   text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele Mendoza. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
-  //   image_url: '/images/abogada-testimonio-1-ready.png',
-  // },
+  {
+    id: '1',
+    name: 'Carmen Palacios',
+    text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele Mendoza. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
+    image_url: '/images/abogada-testimonio-1-ready.png',
+  },
   // {
   //   id: '2',
   //   name: 'Jeison Ramirez',
@@ -82,23 +82,23 @@ const testimonials = [
   // },
   {
     id: '3',
-    name: 'Libia Alemán',
-    text:'quiero darle las gracias y agradecimiento a la doctora matelier Mendoza por su excelente labor ayuda y asesoramiento en los trámites de la declaración de herederos universales la recomiendo que es una persona excelente en su labor de abogado',
+    name: 'Libia Alemán de Vergara',
+    text:'quiero darle las gracias y agradecimiento a la doctora matelier Mendoza por su excelente labor ayuda y asesoramiento con declaración de herederos universales, es una excelente persona y de abogada.',
     image_url: '/images/abogada-testimonio-3-ready.png',
 
   },
   {
     id: '4',
     name: 'Lidia Lara',
-    text:'Hola qué tal, les quería compartir mi experiencia con mi amiga y abogada Magdiele de Machado, les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación, compromiso y esmero y sobre todo es muy responsable y detallista. Por ende,  no nudo en recomendarla.  Bendiciones',
+    text:'Les quiero compartir mi experiencia con mi amiga la abogada Magdiele de Machado. Les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación y compromiso, es muy responsable y detallista. No nudo en recomendarla, bendiciones.',
     image_url: '/images/abogada-testimonio-4-ready.png',
   },  
-  // {
-  //   id: '5',
-  //   name: 'Justificativo de Testigos',
-  //   text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele Mendoza. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
-  //   image_url: '/images/abogada-testimonio-1-ready.png',
-  // },
+  {
+    id: '5',
+    name: 'Carmen Palacios',
+    text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele Mendoza. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
+    image_url: '/images/abogada-testimonio-1-ready.png',
+  },
   // {
   //   id: '6',
   //   name: 'Jeison Ramirez',
@@ -108,14 +108,14 @@ const testimonials = [
   {
     id: '7',
     name: 'Libia Alemán',
-    text:'quiero darle las gracias y agradecimiento a la doctora matelier Mendoza por su excelente labor ayuda y asesoramiento en los trámites de la declaración de herederos universales la recomiendo que es una persona excelente en su labor de abogado',
+    text:'quiero darle las gracias y agradecimiento a la doctora matelier Mendoza por su excelente labor ayuda y asesoramiento con declaración de herederos universales, es una excelente persona y de abogada.',
     image_url: '/images/abogada-testimonio-3-ready.png',
 
   },
   {
     id: '8',
     name: 'Lidia Lara',
-    text:'Hola qué tal, les quería compartir mi experiencia con mi amiga y abogada Magdiele de Machado, les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación, compromiso y esmero y sobre todo es muy responsable y detallista. Por ende,  no nudo en recomendarla.  Bendiciones',
+    text:'Les quiero compartir mi experiencia con mi amiga la abogada Magdiele de Machado. Les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación y compromiso, es muy responsable y detallista. No nudo en recomendarla, bendiciones.',
     image_url: '/images/abogada-testimonio-4-ready.png',
   },  
 ]

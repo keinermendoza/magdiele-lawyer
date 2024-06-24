@@ -92,7 +92,7 @@ export function SwiperSlide(props) {
   } = props;
 
   return (
-    <swiper-slide {...rest}>
+    <swiper-slide className="grid place-content-center" {...rest}>
       {children}
     </swiper-slide>
   );

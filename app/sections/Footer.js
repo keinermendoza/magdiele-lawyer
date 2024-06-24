@@ -3,6 +3,8 @@ import abogada from '/public/abogada-blob-transition-ready.svg'
 import { frede } from "../styles/fonts"
 import WhatsappBtn from "../components/WhatsappBtn"
 import Decoration from "../components/Decoration"
+import Link from "next/link"
+
 export default function Footer() {
   return (
     <footer className="relative p-4 md:p-6 lg:p-8 xl:p-10 py-16  bg-c-blue-primary text-c-gray-blue-primary ">
@@ -39,8 +41,8 @@ export default function Footer() {
             <nav className="d-none lg:block" id="footer-other-pages-nav">
                 <h4 className="mb-3 xl:mb-5 text-lg xl:text-xl">TODAS LAS PAGINAS</h4>
                 <ul className="text-secundary flex flex-col gap-1 relative left-1">
-                    <li><a className="hover:text-white cursor-pointer hover:underline underline-offset-4"  href="#pagina-principal">Pagina Principal</a></li>
-                    <li><a className="hover:text-white cursor-pointer hover:underline underline-offset-4" href="#publicaciones">Publicaciones</a></li>
+                    <li><Link className="hover:text-white cursor-pointer hover:underline underline-offset-4"  href="/">Pagina Principal</Link></li>
+                    <li><Link className="hover:text-white cursor-pointer hover:underline underline-offset-4" href="/blog">Publicaciones</Link></li>
                 </ul>
 
             </nav>
@@ -51,7 +53,7 @@ export default function Footer() {
             </div>
         </div>
         
-        <p class="text-sm xl:text-base text-center mt-8">© 2024 Keiner Mendoza. Todos los Derechos Reservados</p>
+        <p className="text-sm xl:text-base text-center mt-8">© 2024 Keiner Mendoza. Todos los Derechos Reservados</p>
     </footer>
   )
 }

@@ -23,7 +23,6 @@ export default function Home() {
       <Ubicacion />
       <FAQ />
     </main>
-    <Footer />
 
 </>
     )

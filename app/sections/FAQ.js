@@ -5,7 +5,7 @@ import Decoration from '../components/Decoration'
 export default function FAQ() {
   return (
     <section 
-        id="preguntas-frecuentes"
+        id="respuestas"
         className="relative
         bg-c-brown-primary text-c-gold-primary">
           <svg

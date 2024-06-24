@@ -17,7 +17,8 @@ export default function WhatsappBtn({isBlue=false, text='Contactame', size='medi
   }
 
   return (
-    <a href="#whatsapp-link"
+    <a href="https://wa.me/message/ZHCKCJK5L7MXI1"
+    target='_blank'
     className={`w-fit flex items-center gap-3 lg:gap-5 rounded-md 
     transition-all outline-offset-4 outline-transparent hover:outline hover:outline-2 hover:scale-105
     ${isBlue ? 'bg-c-blue-primary text-white hover:outline-c-blue-primary' : 'bg-c-gold-primary text-c-brown-primary  hover:outline-c-gold-primary'}
