@@ -21,7 +21,7 @@ export default function Ubicacion() {
                 </div>
 
                 <div>
-                    <p className="text-xl lg:text-2xl text-center mb-3 lg:mb-5">Horaio de Atencion al Publico</p>
+                    <p className="text-xl lg:text-2xl text-center mb-3 lg:mb-5">Horarios de Atención al Público</p>
                     <table className="border-separate border-spacing-2px">
                         <thead>
                             <tr className="text-white font-light ">

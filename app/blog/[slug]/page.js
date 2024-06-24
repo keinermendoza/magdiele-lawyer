@@ -1,6 +1,4 @@
 import Image from "next/image"
-// import '../../styles/BlogPreview.css'
-// import '../../styles/DetailPost.css'
 import { fetchSinglePost } from "@/app/lib/services";
 import Navbar from "@/app/sections/Navbar";
 // async function fecthPost(slug) {

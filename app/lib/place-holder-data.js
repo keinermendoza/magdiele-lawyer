@@ -71,51 +71,51 @@ const testimonials = [
   {
     id: '1',
     name: 'Carmen Palacios',
-    text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele Mendoza. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
+    text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
     image_url: '/images/abogada-testimonio-1-ready.png',
   },
-  // {
-  //   id: '2',
-  //   name: 'Jeison Ramirez',
-  //   text:'Buenas noches Este Bueno yo me siento satisfecho por los trabajos realizados que me ha hecho la la doctora Marlene porque es una persona muy honesta sincera y amable y no es un solo trabajo que me ha hecho ya me ha hecho varios trabajos y y bueno yo Considero que es una persona adecuada para hacer la lo que es la parte de documentación y todo lo que ella en que ella se especializa sin seriamente y bueno yo la recomiendo y la he recomendado por cierto a a familiares amigos gente cercana y han quedado contentos con con su labor pues Y eso para mí bueno ese gran de Gran agrado y me imagino que para ella sentirse cómoda y y placentera en su en su ámbito de trabajo pues',
-  //   image_url: '/images/abogada-testimonio-2-ready.png',
-  // },
+  {
+    id: '2',
+    name: 'Jeison Ramirez',
+    text:'Me siento satisfecho con los trabajos realizados por la doctora Magdiele, es una persona muy honesta y amable. La he recomendado a familiares y amigos y todos han quedado contentos con su labor.',
+    image_url: '/images/abogada-testimonio-2-ready.png',
+  },
   {
     id: '3',
     name: 'Libia Alemán de Vergara',
-    text:'quiero darle las gracias y agradecimiento a la doctora matelier Mendoza por su excelente labor ayuda y asesoramiento con declaración de herederos universales, es una excelente persona y de abogada.',
+    text:'Quiero darle las gracias y agradecimientos a la doctora Magdiele por su excelente labor ayuda y asesoramiento con la declaración de herederos universales, es una excelente persona y de abogada.',
     image_url: '/images/abogada-testimonio-3-ready.png',
 
   },
   {
     id: '4',
     name: 'Lidia Lara',
-    text:'Les quiero compartir mi experiencia con mi amiga la abogada Magdiele de Machado. Les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación y compromiso, es muy responsable y detallista. No nudo en recomendarla, bendiciones.',
+    text:'Les quiero compartir mi experiencia con mi amiga la abogada Magdiele. Les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación y compromiso, es muy responsable y detallista. No nudo en recomendarla, bendiciones.',
     image_url: '/images/abogada-testimonio-4-ready.png',
   },  
   {
     id: '5',
     name: 'Carmen Palacios',
-    text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele Mendoza. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
+    text:'Estoy muy agradecida con los servicios de asesoría profesional de la Dra. Magdiele. Desde hace 20 años me ha brindado  una buena atención. La recomiendo ampliamente.',
     image_url: '/images/abogada-testimonio-1-ready.png',
   },
-  // {
-  //   id: '6',
-  //   name: 'Jeison Ramirez',
-  //   text:'Buenas noches Este Bueno yo me siento satisfecho por los trabajos realizados que me ha hecho la la doctora Marlene porque es una persona muy honesta sincera y amable y no es un solo trabajo que me ha hecho ya me ha hecho varios trabajos y y bueno yo Considero que es una persona adecuada para hacer la lo que es la parte de documentación y todo lo que ella en que ella se especializa sin seriamente y bueno yo la recomiendo y la he recomendado por cierto a a familiares amigos gente cercana y han quedado contentos con con su labor pues Y eso para mí bueno ese gran de Gran agrado y me imagino que para ella sentirse cómoda y y placentera en su en su ámbito de trabajo pues',
-  //   image_url: '/images/abogada-testimonio-2-ready.png',
-  // },
+  {
+    id: '6',
+    name: 'Jeison Ramirez',
+    text:'Me siento satisfecho con los trabajos realizados por la doctora Magdiele, es una persona muy honesta y amable. La he recomendado a familiares y amigos y todos han quedado contentos con su labor.',
+    image_url: '/images/abogada-testimonio-2-ready.png',
+  },
   {
     id: '7',
     name: 'Libia Alemán',
-    text:'quiero darle las gracias y agradecimiento a la doctora matelier Mendoza por su excelente labor ayuda y asesoramiento con declaración de herederos universales, es una excelente persona y de abogada.',
+    text:'Quiero darle las gracias y agradecimientos a la doctora Magdiele por su excelente labor ayuda y asesoramiento con la declaración de herederos universales, es una excelente persona y de abogada.',
     image_url: '/images/abogada-testimonio-3-ready.png',
 
   },
   {
     id: '8',
     name: 'Lidia Lara',
-    text:'Les quiero compartir mi experiencia con mi amiga la abogada Magdiele de Machado. Les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación y compromiso, es muy responsable y detallista. No nudo en recomendarla, bendiciones.',
+    text:'Les quiero compartir mi experiencia con mi amiga la abogada Magdiele. Les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación y compromiso, es muy responsable y detallista. No nudo en recomendarla, bendiciones.',
     image_url: '/images/abogada-testimonio-4-ready.png',
   },  
 ]

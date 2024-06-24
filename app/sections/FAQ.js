@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link'
 import AcordionQuestion from '../components/AcordionQuestion'
 import Decoration from '../components/Decoration'
 
@@ -25,7 +26,7 @@ export default function FAQ() {
 
           <div className='my-10 flex flex-col gap-5'>
               <AcordionQuestion question="¿Hacer una consulta es Gratis?">
-              Si. hacer una consulta por Whatsapp o por el formulario  en esta pagina es 100% gratis, puedes hacer todas las consultas que quieras.
+              Si. hacer una consulta por <a className='text-c-blue-primary underline underline-offset-4' href="https://wa.me/message/ZHCKCJK5L7MXI1" target='_blank'>Whatsapp</a> o por el <a className='text-c-blue-primary underline underline-offset-4' href="#contacto">formulario</a> en esta pagina es 100% gratis, puedes hacer todas las consultas que quieras.
               </AcordionQuestion>
 
               <AcordionQuestion question="¿Si escribo por Whatsapp quien me va a atender?">
@@ -33,18 +34,16 @@ export default function FAQ() {
               </AcordionQuestion>
               
               <AcordionQuestion question="Quiero hacer una consulta ¿es mejor hacerlo por Whatsapp o por email?">
-              Recomendamos hacer las consultas por Whatsapp  la atencion es más rapida por este medio, 
-              sin embargo si prefiere recibir una respuesta en su correo electronico puede usar el formulario de la seccion de contacto. <br /> 
-              Por favor considere que la respuesta se enviará al correo electronico que proporcione en el campo de correo del formulario.
+              Recomendamos hacer las consultas por <a className='text-c-blue-primary underline underline-offset-4' href="https://wa.me/message/ZHCKCJK5L7MXI1" target='_blank'>Whatsapp</a>  la atencion es más rapida por este medio, sin embargo si prefiere recibir una respuesta en su correo electronico puede usar el formulario de la seccion de contacto. <br /><br /> 
+              Por favor considere que la respuesta se enviará al correo electronico que proporcione en el campo de correo del <a className='text-c-blue-primary underline underline-offset-4' href="#contacto">formulario.</a>
               </AcordionQuestion>
               
               <AcordionQuestion question="¿Puedo hablar con la abogada en persona antes de contratar el servicio?">
-              Por supuesto que sí, puedes visitar a la abogada y ella te atendera con todo gusto. En la seccion de <a href="">Ubicacion</a>
-              encontraras todos los detalles sobre la direccion de la oficina y los horarios de atención.
+              Por supuesto que sí, puedes visitar a la abogada y ella te atendera con todo gusto. En la seccion de <a className='text-c-blue-primary underline underline-offset-4' href="#ubicacion">ubicación</a> encontraras todos los detalles sobre la direccion de la oficina y los horarios de atención.
               </AcordionQuestion>
 
               <AcordionQuestion question="¿Reservar una cita con la doctora es gratis?">
-              Sí, dentro de los horarios de atencion al público puedes escribir para reservar una cita totalmente gratis.
+              Sí, dentro de los <a className='text-c-blue-primary underline underline-offset-4' href="#ubicacion">horarios de atención al público</a> puedes escribir para reservar una cita totalmente gratis.
               </AcordionQuestion>
           </div>
         </div>

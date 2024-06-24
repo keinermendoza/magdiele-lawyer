@@ -24,7 +24,7 @@ export function Swiper(props) {
 
     // initialize swiper
     swiperRef.current.initialize();
-  }, []);
+  }, [rest]);
 
   return (
     <swiper-container init="false" ref={swiperRef}>

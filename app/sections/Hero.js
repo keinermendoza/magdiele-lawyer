@@ -40,8 +40,8 @@ export default function Hero() {
                 <figure className='mt-10 md:mt-0'>
                 <Image 
                     src={abogada}
-                    width={400}
-                    height={400}
+                    width={380}
+                    height={380}
                     alt="Foto de la Abogada Magdiele"
                     />
                 </figure>
