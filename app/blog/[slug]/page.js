@@ -1,6 +1,9 @@
 import Image from "next/image"
 import { fetchSinglePost } from "@/app/lib/services";
 import Navbar from "@/app/sections/Navbar";
+
+export const revalidate = 60
+
 // async function fecthPost(slug) {
 //     const api = process.env.MAIN_API
 //     return fetch(`${api}blog/${slug}/`, {

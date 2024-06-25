@@ -40,7 +40,7 @@ export default function Navbar() {
           label: 'Publicaciones',
           link: '/#ultimas-publicaciones'
         }, {
-            label: 'Ubicacion',
+            label: 'Ubicación',
             link: '/#ubicacion'
           }, {
             label: 'Respuestas',
@@ -113,7 +113,7 @@ export default function Navbar() {
                     </defs>
                 </svg>
                 <span>
-                    Abogada Magdile
+                    Abogada Magdiele
                 </span>
             </Link>
 

@@ -25,7 +25,7 @@ export default function Ubicacion() {
                     <table className="border-separate border-spacing-2px">
                         <thead>
                             <tr className="text-white font-light ">
-                                <th className="bg-c-brown-primary p-2 rounded-md ">Dia de la Semana</th>
+                                <th className="bg-c-brown-primary p-2 rounded-md ">Día de la Semana</th>
                                 <th className="bg-c-brown-primary p-2 rounded-md ">Horario de funcionamiento</th>
                             </tr>
                         </thead>

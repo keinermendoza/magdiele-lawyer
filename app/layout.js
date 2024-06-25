@@ -5,14 +5,11 @@ export const metadata = {
   title: 'Abogada Magdiele',
   description: 'Abogada en Caracas, profesional en el area Mercantil y Civil.',
   author: 'Keiner Mendoza, para mas informacion visitar https://keinermendoza.com',
-  // openGraph: {
-  //   title: 'Abogada Magdiele',
-  //   description: 'Abogada en Caracas, profesional en el area Mercantil y Civil.',
-  //   // images: ['abogada_preview.png']
-  // },
-
+  metadataBase: new URL('https://abogadamagdiele.com'),
 }
 
+// export const dynamic = 'force-dynamic'
+export const revalidate = 600
 
 export default function RootLayout({ children }) {
   return (

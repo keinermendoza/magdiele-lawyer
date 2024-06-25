@@ -8,6 +8,7 @@ import FAQ from './sections/FAQ'
 import Navbar from './sections/Navbar'
 import Footer from './sections/Footer'
 
+
 export default function Home() {
   
   

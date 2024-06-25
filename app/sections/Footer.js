@@ -23,10 +23,10 @@ export default function Footer() {
                         className="w-20 h-20 xl:w-28 xl:h-28 rounded-full"
                     />
                     <figcaption className="text-sm xl:text-base">
-                        <p>Desarrollador web</p>
-                        <p>Licenciado en Economia</p>
-                        <p>Usuario Linux</p>
-                        <p>Autor de este sitio</p>
+                        <p>Profesional de Derecho</p>
+                        <p>Civil y Mecantil</p>
+                        <p>con más de 20 </p>
+                        <p>años de Experiencia</p>
                     </figcaption>
                 </figure>
             </div>
@@ -48,12 +48,12 @@ export default function Footer() {
             </nav>
 
             <div className="flex flex-col  gap-4" id="footer-create-account">
-                <h4 className="text-lg xl:text-xl">CREAR CUENTA</h4>
+                <h4 className="text-lg xl:text-xl">ENTRAR EN CONTACTO</h4>
                 <WhatsappBtn />
             </div>
         </div>
         
-        <p className="text-sm xl:text-base text-center mt-8">© 2024 Keiner Mendoza. Todos los Derechos Reservados</p>
+        <a href="https://keinermendoza.com" target="_blank" className="block text-sm xl:text-base text-center mt-8">© 2024 Keiner Mendoza. Todos los Derechos Reservados</a>
     </footer>
   )
 }

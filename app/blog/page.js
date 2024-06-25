@@ -7,6 +7,8 @@ import { fetchAllPost } from "../lib/services"
 import Image from "next/image"
 import breakLine from '/public/icons/break-line.svg'
 
+export const revalidate = 60
+
 export default async function blogPage() {
 
         // const resp = await axiosInstance.get("blog/")

@@ -43,12 +43,12 @@ export async function Servicios() {
                 flex flex-col gap-12 lg:gap-20
             '>
                 <header className='flex flex-col gap-6 lg:gap-10 text-center'>
-                    <h2 className='text-2xl lg:text-4xl '>Soluciones Legales sin Complicaciones ni Burocracia </h2>
+                    <h2 className='text-2xl lg:text-4xl '>Soluciones Legales sin Complicaciones</h2>
                     <p>
                         <span className={`${frede.className} text-7xl lg:text-8xl`}>+ 20 Años</span><br />
                         <span className='text-xl lg:text-3xl'>De experiencia</span>    
                     </p>
-                    <p className='text-xl lg:text-2xl max-w-lg mx-auto w-full'>Descubra lo que una profesional del Derecho puede hacer por usted, su familia o su empresa</p>
+                    <p className='text-xl lg:text-2xl max-w-lg mx-auto w-full'>Descubra lo que una profesional de Derecho puede hacer por usted, su familia o su empresa</p>
                 </header>
 
                 <div className='flex flex-col-reverse lg:flex-row justify-between items-center gap-6 lg:gap-10'>
@@ -85,7 +85,7 @@ export async function Servicios() {
 
                 <footer className='flex gap-10 text-center lg:text-start  flex-col lg:flex-row items-center justify-between'>
                     <p className='text-lg lg:text-xl'>
-                        Lo que buscas no está en la lista?<br /> 
+                    ¿Lo que buscas no está en la lista?<br /> 
                         Hay muchos otros servicios disponibles. <br />
                         Haga una cosulta 100% Gratis.
                     </p>

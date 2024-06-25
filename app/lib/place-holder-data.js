@@ -1,7 +1,7 @@
 const services = [
     {
         id: '1',
-        name: 'Compraventa de Vehiculos e Inmuebles',
+        name: 'Compraventa de Vehículos e Inmuebles',
         has_post:true,
     },
       {
@@ -24,7 +24,7 @@ const services = [
       },
       {
         id: '5',
-        name: 'Declaracion de Herederos Universales',
+        name: 'Declaración de Herederos Universales',
         has_post:null,
         image_url: '/customers/steph-dietz.png',
       },
@@ -36,7 +36,7 @@ const services = [
       },
       {
         id: '7',
-        name: 'Constitucion de Asociaciones Civiles y Fundaciones',
+        name: 'Constitución de Asociaciones Civiles y Fundaciones',
         has_post:null,
         image_url: '/customers/evil-rabbit.png',
       },
@@ -48,7 +48,7 @@ const services = [
       },
       {
         id: '9',
-        name: 'Registro de Compañía Anonima',
+        name: 'Registro de Compañía Anónima',
         has_post:null,
         image_url: '/customers/amy-burns.png',
       },
@@ -83,14 +83,14 @@ const testimonials = [
   {
     id: '3',
     name: 'Libia Alemán de Vergara',
-    text:'Quiero darle las gracias y agradecimientos a la doctora Magdiele por su excelente labor ayuda y asesoramiento con la declaración de herederos universales, es una excelente persona y de abogada.',
+    text:'Quiero darle las gracias y agradecimientos a la doctora Magdiele por su excelente labor, ayuda y asesoramiento con la declaración de herederos universales, es una excelente persona y abogada.',
     image_url: '/images/abogada-testimonio-3-ready.png',
 
   },
   {
     id: '4',
     name: 'Lidia Lara',
-    text:'Les quiero compartir mi experiencia con mi amiga la abogada Magdiele. Les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación y compromiso, es muy responsable y detallista. No nudo en recomendarla, bendiciones.',
+    text:'Les quiero compartir mi experiencia con mi amiga la abogada Magdiele. Les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación y compromiso, es muy responsable y detallista. No dudo en recomendarla, bendiciones.',
     image_url: '/images/abogada-testimonio-4-ready.png',
   },  
   {
@@ -108,14 +108,14 @@ const testimonials = [
   {
     id: '7',
     name: 'Libia Alemán',
-    text:'Quiero darle las gracias y agradecimientos a la doctora Magdiele por su excelente labor ayuda y asesoramiento con la declaración de herederos universales, es una excelente persona y de abogada.',
+    text:'Quiero darle las gracias y agradecimientos a la doctora Magdiele por su excelente labor, ayuda y asesoramiento con la declaración de herederos universales, es una excelente persona y abogada.',
     image_url: '/images/abogada-testimonio-3-ready.png',
 
   },
   {
     id: '8',
     name: 'Lidia Lara',
-    text:'Les quiero compartir mi experiencia con mi amiga la abogada Magdiele. Les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación y compromiso, es muy responsable y detallista. No nudo en recomendarla, bendiciones.',
+    text:'Les quiero compartir mi experiencia con mi amiga la abogada Magdiele. Les puedo decir que es una profesional dedicada, ama su trabajo y lo desempeña con dedicación y compromiso, es muy responsable y detallista. No dudo en recomendarla, bendiciones.',
     image_url: '/images/abogada-testimonio-4-ready.png',
   },  
 ]

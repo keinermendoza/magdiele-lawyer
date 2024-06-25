@@ -23,12 +23,12 @@ export default function Contacto() {
 
           <div className="w-full max-w-md flex flex-col gap-6 lg:gap-10 items-center text-center ">
               <p>Recibe una respuesta rapida y familiar escribiendo por Whatsapp</p>
-              <p>Te recomendamos este metodo, es la forma mas practica. La mayoria de nuestros clientes lo usan.</p>
+              <p>Te recomendamos este método, es la forma más práctica. La mayoría de nuestros clientes lo usan.</p>
               <WhatsappBtn isBlue size='big' />
           </div>
 
           <div className="w-full max-w-md ">
-            <p className='mb-5 text-center'>Has una consulta gratuita y recibe la respuesta en tu correo electronico</p>
+            <p className='mb-5 text-center'>Has una consulta gratuita y recibe la respuesta en tu correo electrónico</p>
             <ContactForm />
           </div>
         </div>
