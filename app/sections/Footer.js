@@ -1,5 +1,6 @@
 import Image from "next/image"
-import abogada from '/public/abogada-blob-transition-ready.svg'
+import abogada from '/public/images/abogada-blob-hero.svg'
+
 import { frede } from "../styles/fonts"
 import WhatsappBtn from "../components/WhatsappBtn"
 import Decoration from "../components/Decoration"
