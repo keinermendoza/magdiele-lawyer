@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react"
 import WhatsappBtn from "../components/WhatsappBtn";
 import Link from "next/link";
 
-const MobileLink = ({children, link}) => {
+const MobileLink = ({children, link, handleCloseNavbar}) => {
     return (
-        <li>
+        <li onClick={handleCloseNavbar}>
             <Link className="transition duration-200 block text-xl py-5 w-full hover:bg-c-gray-blue-transparent" 
             href={link}>{children}</Link>
         </li>
@@ -56,15 +56,15 @@ export default function Navbar() {
         setIsOpen(!isOpen)
     }
 
-    function handleResize () {
+    function handleCloseNavbar () {
         setIsOpen(false)
     }
 
     // closing the navbar when resize the screen
     useEffect(() => {
-        window.addEventListener('resize', handleResize)
+        window.addEventListener('resize', handleCloseNavbar)
         return () => {
-            window.removeEventListener('resize', handleResize)
+            window.removeEventListener('resize', handleCloseNavbar)
         }
     }, [])
     
@@ -148,7 +148,11 @@ export default function Navbar() {
 
                 {
                     LINKS.map((l, index) => (
-                        <MobileLink key={index} link={l.link}>{l.label}</MobileLink>
+                        <MobileLink 
+                            key={index}
+                            link={l.link}
+                            handleCloseNavbar={handleCloseNavbar}
+                            >{l.label}</MobileLink>
                     ))
                 }  
 
