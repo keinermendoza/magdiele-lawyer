@@ -2,7 +2,7 @@
 import Image from 'next/image'
 
 import saludo from '/public/images/saludo.png'
-import abogada from '/public/abogada-blob-transition-ready.svg'
+import abogada from '/public/images/abogada-blob-hero.svg'
 import WhatsappBtn from '../components/WhatsappBtn' 
 function Background() {
   return (
@@ -40,8 +40,8 @@ export default function Hero() {
                 <figure className='mt-10 md:mt-0'>
                 <Image 
                     src={abogada}
-                    width={380}
-                    height={380}
+                    width={400}
+                    height={400}
                     alt="Foto de la Abogada Magdiele"
                     />
                 </figure>
